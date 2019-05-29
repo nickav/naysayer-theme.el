@@ -45,7 +45,7 @@
       (text       "#d2b58d")
       (comments   "#67cd5d")
       (punctuation "#86E08F")
-      (keywords "#d4d4d4")
+      (keywords "#ffffff")
       (variables "#d4d4d4")
       (functions "#d4d4d4")
       (methods    "#d4d4d4")
@@ -65,13 +65,13 @@
    ;; *****************************************************************************
 
    `(default                          ((t (:foreground ,text :background ,background, :weight normal))))
-   `(region                           ((t (:foreground ,white :background ,selection))))
+   `(region                           ((t (:foreground nil :background ,selection))))
    `(cursor                           ((t (:background ,white                        ))))
    `(fringe                           ((t (:background ,background   :foreground ,white))))
    `(linum                            ((t (:background ,background :foreground ,gutter-fg))))
    `(mode-line                        ((t (:foreground ,white :background ,gutters-active  ))))
    `(mode-line-inactive               ((t (:foreground ,gutter-fg :background ,gutters  ))))
-   `(highlight ((t (:foreground ,white :background ,selection))))
+   `(highlight ((t (:foreground nil :background ,selection))))
 
    ;; Font lock faces
    ;; *****************************************************************************
@@ -91,6 +91,7 @@
    ;; Plugins
    ;; *****************************************************************************
    `(trailing-whitespace ((t (:foreground nil :background ,warning))))
+   `(whitespace-trailing ((t (:background nil :foreground ,warning :inverse-video t))))
 
    `(linum ((t (:foreground ,line-fg :background ,background))))
    `(linum-relative-current-face ((t (:foreground ,line-fg :background ,background))))
