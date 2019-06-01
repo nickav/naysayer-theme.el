@@ -122,7 +122,7 @@
                                    :underline unspecified
                                    :foreground ,background
                                    :background ,text
-                                   :box (:line-width 1 :color ,text :style unspecified)))))
+                                   :box nil))))
    `(powerline-active1 ((t (:background ,text :foreground ,background))))
    `(powerline-active2 ((t (:background ,text :foreground ,background))))
 
@@ -130,7 +130,7 @@
                                             :underline unspecified
                                             :foreground ,text
                                             :background ,background
-                                            :box (:line-width 1 :color ,background :style unspecified)))))
+                                            :box nil))))
    `(powerline-inactive1 ((t (:background ,background :foreground ,text))))
    `(powerline-inactive2 ((t (:background ,background :foreground ,text))))
 
