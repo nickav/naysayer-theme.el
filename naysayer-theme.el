@@ -18,9 +18,9 @@
 ;; *****************************************************************************
 
 (unless (>= emacs-major-version 24)
-  (error "requires Emacs 24 or later."))
+  (error "The naysayer theme requires Emacs 24 or later!"))
 
-(deftheme naysayer "Description")
+(deftheme naysayer "The naysayer color theme")
 
 ;; Monokai colors
 (defcustom monokai-yellow "#E6DB74" "Primary colors - yellow" :type 'string :group 'monokai)
@@ -31,10 +31,6 @@
 (defcustom monokai-green "#A6E22E" "Primary colors - green" :type 'string :group 'monokai)
 (defcustom monokai-cyan "#A1EFE4" "Primary colors - cyan" :type 'string :group 'monokai)
 (defcustom monokai-violet "#AE81FF" "Primary colors - violet" :type 'string :group 'monokai)
-
-(custom-theme-set-variables
- 'naysayer
- '(linum-format " %5i "))
 
 (let ((background "#082628")
       (gutters    "#082628")
@@ -69,8 +65,6 @@
    `(cursor                           ((t (:background ,white                        ))))
    `(fringe                           ((t (:background ,background   :foreground ,white))))
    `(linum                            ((t (:background ,background :foreground ,gutter-fg))))
-   `(mode-line                        ((t (:foreground ,white :background ,gutters-active  ))))
-   `(mode-line-inactive               ((t (:foreground ,gutter-fg :background ,gutters  ))))
    `(highlight ((t (:foreground nil :background ,selection))))
 
    ;; Font lock faces
@@ -117,7 +111,7 @@
    `(rainbow-delimiters-depth-12-face ((t (:foreground ,monokai-red))))
 
    ;; mode-line and powerline
-   `(mode-line-buffer-id ((t (:foreground ,background :weight bold))))
+   `(mode-line-buffer-id ((t (:foreground ,background :distant-foreground ,text :text ,text :weight bold))))
    `(mode-line ((t (:inverse-video unspecified
                                    :underline unspecified
                                    :foreground ,background
@@ -133,9 +127,13 @@
                                             :box nil))))
    `(powerline-inactive1 ((t (:background ,background :foreground ,text))))
    `(powerline-inactive2 ((t (:background ,background :foreground ,text))))
-
-   )
   )
+
+  (custom-theme-set-variables
+    'naysayer
+    '(linum-format " %5i ")
+  )
+)
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
