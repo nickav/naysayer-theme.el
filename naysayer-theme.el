@@ -1,21 +1,14 @@
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
+;;; naysayer-theme.el --- The naysayer color theme
 
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
+;; Author: Nick Aversano <nickav@users.noreply.github.com>
+;; Version: 0.2
+;; Filename: naysayer-theme.el
+;; Package-Requires: ((emacs "24"))
+;; Keywords: theme, dark
+;; URL: https://github.com/nickav/naysayer-theme.el
+;; License: GPL-3+
 
-;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-;; *****************************************************************************
-;;
-;; naysayer :- Description
-;;
-;; *****************************************************************************
+;;; Code:
 
 (unless (>= emacs-major-version 24)
   (error "The naysayer theme requires Emacs 24 or later!"))
