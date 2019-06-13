@@ -4,7 +4,6 @@
 ;; Version: 0.2
 ;; Filename: naysayer-theme.el
 ;; Package-Requires: ((emacs "24"))
-;; Keywords: theme, dark
 ;; URL: https://github.com/nickav/naysayer-theme.el
 ;; License: GPL-3+
 
@@ -20,14 +19,14 @@
 (deftheme naysayer "The naysayer color theme")
 
 ;; Monokai colors
-(defcustom monokai-yellow "#E6DB74" "Primary colors - yellow" :type 'string :group 'monokai)
-(defcustom monokai-orange "#FD971F" "Primary colors - orange" :type 'string :group 'monokai)
-(defcustom monokai-red "#F92672" "Primary colors - red" :type 'string :group 'monokai)
-(defcustom monokai-magenta "#FD5FF0" "Primary colors - magenta" :type 'string :group 'monokai)
-(defcustom monokai-blue "#66D9EF" "Primary colors - blue" :type 'string :group 'monokai)
-(defcustom monokai-green "#A6E22E" "Primary colors - green" :type 'string :group 'monokai)
-(defcustom monokai-cyan "#A1EFE4" "Primary colors - cyan" :type 'string :group 'monokai)
-(defcustom monokai-violet "#AE81FF" "Primary colors - violet" :type 'string :group 'monokai)
+(defcustom naysayer-theme-yellow "#E6DB74" "Primary colors - yellow" :type 'string :group 'monokai)
+(defcustom naysayer-theme-orange "#FD971F" "Primary colors - orange" :type 'string :group 'monokai)
+(defcustom naysayer-theme-red "#F92672" "Primary colors - red" :type 'string :group 'monokai)
+(defcustom naysayer-theme-magenta "#FD5FF0" "Primary colors - magenta" :type 'string :group 'monokai)
+(defcustom naysayer-theme-blue "#66D9EF" "Primary colors - blue" :type 'string :group 'monokai)
+(defcustom naysayer-theme-green "#A6E22E" "Primary colors - green" :type 'string :group 'monokai)
+(defcustom naysayer-theme-cyan "#A1EFE4" "Primary colors - cyan" :type 'string :group 'monokai)
+(defcustom naysayer-theme-violet "#AE81FF" "Primary colors - violet" :type 'string :group 'monokai)
 
 (let ((background "#082628")
       (gutters    "#082628")
@@ -94,18 +93,18 @@
    `(hl-line-face ((t (:background ,highlight-line))))
 
    ;; rainbow-delimiters
-   `(rainbow-delimiters-depth-1-face ((t (:foreground ,monokai-violet))))
-   `(rainbow-delimiters-depth-2-face ((t (:foreground ,monokai-blue))))
-   `(rainbow-delimiters-depth-3-face ((t (:foreground ,monokai-green))))
-   `(rainbow-delimiters-depth-4-face ((t (:foreground ,monokai-yellow))))
-   `(rainbow-delimiters-depth-5-face ((t (:foreground ,monokai-orange))))
-   `(rainbow-delimiters-depth-6-face ((t (:foreground ,monokai-red))))
-   `(rainbow-delimiters-depth-7-face ((t (:foreground ,monokai-violet))))
-   `(rainbow-delimiters-depth-8-face ((t (:foreground ,monokai-blue))))
-   `(rainbow-delimiters-depth-9-face ((t (:foreground ,monokai-green))))
-   `(rainbow-delimiters-depth-10-face ((t (:foreground ,monokai-yellow))))
-   `(rainbow-delimiters-depth-11-face ((t (:foreground ,monokai-orange))))
-   `(rainbow-delimiters-depth-12-face ((t (:foreground ,monokai-red))))
+   `(rainbow-delimiters-depth-1-face ((t (:foreground ,naysayer-theme-violet))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground ,naysayer-theme-blue))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground ,naysayer-theme-green))))
+   `(rainbow-delimiters-depth-4-face ((t (:foreground ,naysayer-theme-yellow))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground ,naysayer-theme-orange))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground ,naysayer-theme-red))))
+   `(rainbow-delimiters-depth-7-face ((t (:foreground ,naysayer-theme-violet))))
+   `(rainbow-delimiters-depth-8-face ((t (:foreground ,naysayer-theme-blue))))
+   `(rainbow-delimiters-depth-9-face ((t (:foreground ,naysayer-theme-green))))
+   `(rainbow-delimiters-depth-10-face ((t (:foreground ,naysayer-theme-yellow))))
+   `(rainbow-delimiters-depth-11-face ((t (:foreground ,naysayer-theme-orange))))
+   `(rainbow-delimiters-depth-12-face ((t (:foreground ,naysayer-theme-red))))
 
    ;; mode-line and powerline
    `(mode-line-buffer-id ((t (:foreground ,background :distant-foreground ,text :text ,text :weight bold))))
