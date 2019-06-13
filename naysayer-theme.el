@@ -8,6 +8,10 @@
 ;; URL: https://github.com/nickav/naysayer-theme.el
 ;; License: GPL-3+
 
+;;; Commentary:
+
+;; Dark green blue color scheme with tan colors. Inspired by Jonathan Blow's compiler livestreams.
+
 ;;; Code:
 
 (unless (>= emacs-major-version 24)
@@ -140,3 +144,7 @@
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
+
+(provide 'naysayer-theme)
+
+;;; naysayer-theme.el ends here
