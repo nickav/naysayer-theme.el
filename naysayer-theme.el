@@ -31,9 +31,14 @@
 (let ((background "#082628")
       (gutters    "#082628")
       (gutter-fg  "#082628")
+      (midnight  "#182638")
+      (midnight-2  "#082628")
+      (midnight-3  "#082628")
+      (gutter-fg  "#082628")
       (gutters-active "#082628")
       (builtin      "#ffffff")
-      (selection  "#0000ff")
+      ;; (selection  "#0000ff")
+      (selection "#126347")
       (text       "#d2b58d")
       (comments   "#67cd5d")
       (punctuation "#86E08F")
@@ -123,13 +128,52 @@
                                             :box nil))))
    `(powerline-inactive1 ((t (:background ,background :foreground ,text))))
    `(powerline-inactive2 ((t (:background ,background :foreground ,text))))
-  )
+
+  ;; company-mode
+  ;; TODO
+  ;; company-tooltip-search           - Face used for the search string in the tooltip
+  ;; company-tooltip-mouse            - Face used for the tooltip item under the mouse
+  ;; company-preview-search           - Face used for the search string in the completion preview
+  ;; company-echo                     - Face used for completions in the echo area
+  ;; company-echo-common              - Face used for the common part of completions in the echo area
+
+  `(company-tooltip
+    ((t (:background ,midnight-2 :foreground ,white))))
+
+  `(company-tooltip-selection
+    ((t (:background ,selection :foreground ,white :weight bold))))
+
+  `(company-tooltip-common
+    ((t (:background ,midnight-2 :foreground ,naysayer-theme-green :weight bold))))
+
+  `(company-tooltip-annotation
+    ((t (:background ,midnight-2 :foreground ,naysayer-theme-blue))))
+
+  `(company-preview
+    ((t (:background ,midnight :foreground ,naysayer-theme-orange))))
+
+  `(company-preview-common
+    ((t (:background ,midnight :foreground ,naysayer-theme-orange))))
+
+  `(company-tooltip-common-selection
+    ((t (:background ,midnight-3 :foreground ,naysayer-theme-green :weight bold))))
+
+  `(company-scrollbar-bg
+    ((t (:background ,midnight-3 :foreground ,midnight-2))))
+
+  `(company-scrollbar-fg
+    ((t (:background ,naysayer-theme-blue))))
+
+   )
 
   (custom-theme-set-variables
-    'naysayer
-    '(linum-format " %5i ")
+   'naysayer
+   '(linum-format " %5i ")
+   )
+
+
+  
   )
-)
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
@@ -146,4 +190,3 @@
 
 (provide 'naysayer-theme)
 
-;;; naysayer-theme.el ends here
