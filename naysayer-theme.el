@@ -84,7 +84,7 @@
    `(whitespace-trailing ((t (:background nil :foreground ,warning :inverse-video t))))
 
    `(linum ((t (:foreground ,line-fg :background ,background))))
-   `(linum-relative-current-face ((t (:foreground ,line-fg :background ,background))))
+   `(linum-relative-current-face ((t (:foreground ,white :background ,background))))
    `(line-number ((t (:foreground ,line-fg :background ,background))))
    `(line-number-current-line ((t (:foreground ,white :background ,background))))
 
