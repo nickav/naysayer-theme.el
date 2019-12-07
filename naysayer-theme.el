@@ -44,6 +44,7 @@
       (strings    "#2ec09c")
       (constants "#8fe1c8")
       (macros "#86E08F")
+      (numbers "#8fe1c8")
       (white     "#ffffff")
       (error "#ff0000")
       (warning "#ffaa00")
@@ -77,6 +78,7 @@
    `(font-lock-function-name-face     ((t (:foreground ,functions))))
    `(font-lock-doc-string-face        ((t (:foreground ,strings))))
    `(font-lock-preprocessor-face      ((t (:foreground ,macros))))
+   `(font-lock-warning-face           ((t (:foreground ,warning))))
 
    ;; Plugins
    ;; *****************************************************************************
@@ -134,6 +136,9 @@
    `(js2-external-variable ((t (:foreground ,constants))))
    `(js2-error ((t (:foreground ,error))))
    `(js2-warning ((t (:foreground ,warning))))
+
+   ;; highlight numbers
+   `(highlight-numbers-number ((t (:foreground ,numbers))))
   )
 
   (custom-theme-set-variables
