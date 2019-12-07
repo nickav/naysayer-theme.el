@@ -35,7 +35,7 @@
       (builtin      "#ffffff")
       (selection  "#0000ff")
       (text       "#d2b58d")
-      (comments   "#67cd5d")
+      (comments   "#5ebd55")
       (punctuation "#86E08F")
       (keywords "#ffffff")
       (variables "#d4d4d4")
@@ -123,6 +123,17 @@
                                             :box nil))))
    `(powerline-inactive1 ((t (:background ,background :foreground ,text))))
    `(powerline-inactive2 ((t (:background ,background :foreground ,text))))
+
+   ;; js2-mode
+   `(js2-function-call ((t (:inherit (font-lock-function-name-face)))))
+   `(js2-function-param ((t (:foreground ,text))))
+   `(js2-jsdoc-tag ((t (:foreground ,keywords))))
+   `(js2-jsdoc-type ((t (:foreground ,constants))))
+   `(js2-jsdoc-value((t (:foreground ,text))))
+   `(js2-object-property ((t (:foreground ,text))))
+   `(js2-external-variable ((t (:foreground ,constants))))
+   `(js2-error ((t (:foreground ,error))))
+   `(js2-warning ((t (:foreground ,warning))))
   )
 
   (custom-theme-set-variables
