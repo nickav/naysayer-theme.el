@@ -1,7 +1,7 @@
 ;;; naysayer-theme.el --- The naysayer color theme
 
 ;; Author: Nick Aversano <nickav@users.noreply.github.com>
-;; Version: 0.31
+;; Version: 0.32
 ;; Filename: naysayer-theme.el
 ;; Package-Requires: ((emacs "24"))
 ;; URL: https://github.com/nickav/naysayer-theme.el
@@ -28,23 +28,23 @@
 (defcustom naysayer-theme-cyan "#A1EFE4" "Primary colors - cyan" :type 'string :group 'monokai)
 (defcustom naysayer-theme-violet "#AE81FF" "Primary colors - violet" :type 'string :group 'monokai)
 
-(let ((background "#082628")
-      (gutters    "#082628")
-      (gutter-fg  "#082628")
-      (gutters-active "#082628")
+(let ((background "#062329")
+      (gutters    "#062329")
+      (gutter-fg  "#062329")
+      (gutters-active "#062329")
       (builtin      "#ffffff")
       (selection  "#0000ff")
-      (text       "#d2b58d")
-      (comments   "#67cd5d")
-      (punctuation "#86E08F")
+      (text       "#d1b897")
+      (comments   "#44b340")
+      (punctuation "#8cde94")
       (keywords "#ffffff")
-      (variables "#d4d4d4")
-      (functions "#d4d4d4")
-      (methods    "#d4d4d4")
+      (variables "#c1d1e3")
+      (functions "#c1d1e3")
+      (methods    "#c1d1e3")
       (strings    "#2ec09c")
-      (constants "#8fe1c8")
-      (macros "#86E08F")
-      (numbers "#8fe1c8")
+      (constants "#7ad0c6")
+      (macros "#8cde94")
+      (numbers "#7ad0c6")
       (white     "#ffffff")
       (error "#ff0000")
       (warning "#ffaa00")
@@ -67,7 +67,7 @@
    ;; Font lock faces
    ;; *****************************************************************************
 
-   `(font-lock-keyword-face           ((t (:foreground ,keywords, :weight normal))))
+   `(font-lock-keyword-face           ((t (:foreground ,keywords))))
    `(font-lock-type-face              ((t (:foreground ,punctuation))))
    `(font-lock-constant-face          ((t (:foreground ,constants))))
    `(font-lock-variable-name-face     ((t (:foreground ,variables))))
