@@ -127,6 +127,10 @@
    `(powerline-inactive1 ((t (:background ,background :foreground ,text))))
    `(powerline-inactive2 ((t (:background ,background :foreground ,text))))
 
+    ;; better compatibility with default DOOM mode-line
+   `(error ((t (:foreground nil :weight normal))))
+   `(doom-modeline-project-dir ((t (:foreground nil :weight bold))))
+   
    ;; js2-mode
    `(js2-function-call ((t (:inherit (font-lock-function-name-face)))))
    `(js2-function-param ((t (:foreground ,text))))
