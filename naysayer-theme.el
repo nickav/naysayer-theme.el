@@ -109,6 +109,13 @@
    `(rainbow-delimiters-depth-11-face ((t (:foreground ,naysayer-theme-orange))))
    `(rainbow-delimiters-depth-12-face ((t (:foreground ,naysayer-theme-red))))
 
+   ;; which-func
+   `(which-func ((t (:inverse-video unspecified
+                                    :underline unspecified
+                                    :foreground ,background
+                                    :weight bold
+                                    :box nil))))
+
    ;; mode-line and powerline
    `(mode-line-buffer-id ((t (:foreground ,background :distant-foreground ,text :text ,text :weight bold))))
    `(mode-line ((t (:inverse-video unspecified
