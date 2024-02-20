@@ -151,6 +151,11 @@
 
    ;; highlight numbers
    `(highlight-numbers-number ((t (:foreground ,numbers))))
+
+   ;; tab-bar-mode
+   `(tab-bar ((t (:inherit modeline))))
+   `(tab-bar-tab ((t (:foreground ,background :background ,text))))
+   `(tab-bar-tab-inactive ((t (:foreground ,text :background ,background))))
   )
 
   (custom-theme-set-variables
