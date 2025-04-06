@@ -91,6 +91,20 @@
    `(line-number ((t (:foreground ,line-fg :background ,background))))
    `(line-number-current-line ((t (:foreground ,white :background ,background))))
 
+   ;; compilation
+   `(compilation-info ((t ,(list :foreground naysayer-theme-green
+                                 :inherit 'unspecified))))
+   `(compilation-warning ((t ,(list :foreground naysayer-theme-yellow
+                                    :bold t
+                                    :inherit 'unspecified))))
+   `(compilation-error ((t (:foreground, error))))
+   `(compilation-mode-line-fail ((t ,(list :foreground error
+                                           :weight 'bold
+                                           :inherit 'unspecified))))
+   `(compilation-mode-line-exit ((t ,(list :foreground naysayer-theme-green
+                                           :weight 'bold
+                                           :inherit 'unspecified))))
+
    ;; hl-line-mode
    `(hl-line ((t (:background ,highlight-line))))
    `(hl-line-face ((t (:background ,highlight-line))))
