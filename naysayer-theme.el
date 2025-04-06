@@ -1,7 +1,7 @@
 ;;; naysayer-theme.el --- The naysayer color theme
 
 ;; Author: Nick Aversano <nickav@users.noreply.github.com>
-;; Version: 0.33
+;; Version: 0.34
 ;; Filename: naysayer-theme.el
 ;; Package-Requires: ((emacs "24"))
 ;; URL: https://github.com/nickav/naysayer-theme.el
