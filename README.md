@@ -14,7 +14,7 @@ Includes support for `rainbow-delimeters-mode`.
 
 ### With package.el
 
-Naysayer is available on [MELPA](http://melpa.milkbox.net).
+Naysayer is available on [MELPA](https://melpa.org).
 
 You can install `naysayer-theme` with: `M-x package-install naysayer-theme`
 
